@@ -1,0 +1,28 @@
+{
+  "name": "lambda-aws-sdk-size-benchmark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "package": "sls package"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "serverless": "^1.39.1",
+    "serverless-webpack": "^5.2.0",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb-v2-node": "^0.1.0-preview.2",
+    "aws-sdk": "^2.429.0"
+  },
+  "description": "Benchmarking aws-sdk bundling sizes",
+  "author": "thomasmichaelwallace <thomasmichaelwallace@gmail.com>",
+  "repository": "https://github.com/thomasmichaelwallace/lambda-aws-sdk-size-benchmark.git"
+}

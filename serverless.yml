@@ -1,0 +1,28 @@
+service: api-hint
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack:
+    includeModules: false
+    packager: 'yarn'
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  mock:
+    handler: handlers/mock.handler
+  v2generic:
+    handler: handlers/v2generic.handler
+  v2specific:
+    handler: handlers/v2specific.handler
+  v2direct:
+    handler: handlers/v2direct.handler
+  v3direct:
+    handler: handlers/v3direct.handler
